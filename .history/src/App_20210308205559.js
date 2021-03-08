@@ -7,7 +7,7 @@ function App() {
     <React.Fragment>
       <Navbar/>
       <div className='container'>
-      <Movies/>
+        <Movies/>
       </div>
     </React.Fragment>
 

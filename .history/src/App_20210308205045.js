@@ -1,14 +1,14 @@
+import './App.css';
 import React from 'react';
 import Movies from './components/movies';
 import Navbar from './components/navbar';
-
 function App() {
   return (
     <React.Fragment>
       <Navbar/>
-      <div className='container'>
-      <Movies/>
-      </div>
+      <main className='container'>
+        <Movies/>
+        </main>
     </React.Fragment>
 
    );

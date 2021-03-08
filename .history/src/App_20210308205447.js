@@ -1,3 +1,4 @@
+import './App.css';
 import React from 'react';
 import Movies from './components/movies';
 import Navbar from './components/navbar';
@@ -7,7 +8,7 @@ function App() {
     <React.Fragment>
       <Navbar/>
       <div className='container'>
-      <Movies/>
+        <Movies/>
       </div>
     </React.Fragment>
 
