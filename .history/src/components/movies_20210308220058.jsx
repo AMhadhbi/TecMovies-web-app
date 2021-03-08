@@ -30,7 +30,7 @@ class Movies extends Component {
                 <th>Genre</th>
                 <th>Stock</th>
                 <th>Rate</th>
-                <th/>
+                <th>Like</th>
                 <th/>
               </tr>
             </thead>
@@ -47,8 +47,8 @@ class Movies extends Component {
                       OnLike={this.handleLike}/>
                     </td>
                     <td>
-                    <button className="btn btn-danger btn-sm badge-pill" 
-                    onClick={ () => this.handelDelete(movie)} >Delete <i className="fa fa-trash"/>
+                    <button className="btn btn-danger btn-sm" onClick={ () => this.handelDelete(movie)} >
+                    Delete <i className="fa fa-trash"/>
                     </button>
                     </td>
             </tr>

@@ -47,8 +47,8 @@ class Movies extends Component {
                       OnLike={this.handleLike}/>
                     </td>
                     <td>
-                    <button className="btn btn-danger btn-sm badge-pill" 
-                    onClick={ () => this.handelDelete(movie)} >Delete <i className="fa fa-trash"/>
+                    <button className="btn btn-danger btn-sm float-right badge-pill" 
+                    onClick={ () => this.handelDelete(movie)} >Delete <i className="fa fa-trash float-right"/>
                     </button>
                     </td>
             </tr>
