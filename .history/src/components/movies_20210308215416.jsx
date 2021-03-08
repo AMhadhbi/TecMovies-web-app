@@ -18,6 +18,7 @@ class Movies extends Component {
       let movieInDb = movies.find((m) => m._id === movie._id);
       movies.splice(movies.indexOf(movieInDb), 1);
       this.setState({movies});
+      ;
     
     }
     render() { 
@@ -47,7 +48,7 @@ class Movies extends Component {
                       OnLike={this.handleLike}/>
                     </td>
                     <td>
-                    <button className="btn btn-danger btn-sm" onClick={ () => this.handelDelete(movie)} >
+                    <button className="btn btn-danger btn-sm" onClick={this.handelDelete(movie)} >
                     <i className="fa fa-trash"/>
                     </button>
                     </td>

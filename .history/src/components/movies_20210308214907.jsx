@@ -13,12 +13,8 @@ class Movies extends Component {
       movies[index].liked = !movies[index].liked;
       this.setState({movies})
     }
-    handelDelete = (movie) => {
-      const movies = [...this.state.movies];
-      let movieInDb = movies.find((m) => m._id === movie._id);
-      movies.splice(movies.indexOf(movieInDb), 1);
-      this.setState({movies});
-    
+    handelDelete = () => {
+
     }
     render() { 
         const {movies} = this.state;
@@ -47,7 +43,7 @@ class Movies extends Component {
                       OnLike={this.handleLike}/>
                     </td>
                     <td>
-                    <button className="btn btn-danger btn-sm" onClick={ () => this.handelDelete(movie)} >
+                    <button className="btn btn-danger btn-sm" onClick={this.handelDelete()} >
                     <i className="fa fa-trash"/>
                     </button>
                     </td>
