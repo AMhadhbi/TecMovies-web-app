@@ -6,13 +6,6 @@ class Movies extends Component {
     state = { 
         movies : getMovies()
      }
-    handleLike = (movie) => {
-      const movies = [...this.state.movies];
-      const index = movies.indexOf(movie);
-      movies[index] = { ...movies[index]};
-      movies[index].liked = !movies[index].liked;
-      this.setState({movies})
-    }
     render() { 
         const {movies} = this.state;
         return ( 
@@ -35,9 +28,7 @@ class Movies extends Component {
                     <td>{movie.numberInStock}</td>
                     <td>{movie.dailyRentalRate}</td>
                     <td >
-                      <Like 
-                      movie={movie}
-                      OnLike={this.handleLike}/>
+                      <Like/>
                     </td>
                     <td>
                     <button className="btn btn-danger btn-sm">
